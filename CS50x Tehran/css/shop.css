@@ -1,0 +1,196 @@
+body {margin: 0;}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    zoom: 1;
+}
+/* line 4, sass/libs/_mixins.scss */
+.container:after {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0;
+}
+@media (min-width: 768px) {
+    /* line 10, sass/libs/bootstrap-grid/_grid.scss */
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    /* line 10, sass/libs/bootstrap-grid/_grid.scss */
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    /* line 10, sass/libs/bootstrap-grid/_grid.scss */
+    .container {
+        width: 1170px;
+    }
+}
+
+/* line 30, sass/libs/bootstrap-grid/_grid.scss */
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    zoom: 1;
+}
+
+
+
+/* line 1, sass/layout/_header.scss */
+.site-header {
+    zoom: 1;
+    z-index: 99;
+    background-color: #242424;
+    border-radius: 1em;
+    width: 1200px;
+    margin: 15px auto;
+    position: relative;
+    height: 3em;
+}
+/* line 4, sass/libs/_mixins.scss */
+.site-header:after {
+    content: " ";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0px;
+    text-decoration: none;
+}
+/* line 5, sass/layout/_header.scss */
+.header-collapse .site-header {
+    position: absolute;
+    width: 100%;
+}
+/* line 9, sass/layout/_header.scss */
+.site-header .container {
+    zoom: 1;
+    border-bottom: hidden;
+}
+/* line 4, sass/libs/_mixins.scss */
+.site-header .container:after {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0;
+}
+
+/* line 28, sass/layout/_header.scss */
+.main-navigation {
+    float: left;
+    height: 0;
+}
+/* line 30, sass/layout/_header.scss */
+.main-navigation .toggle-menu {
+    background: none;
+    color: #848484;
+    font-size: 18px;
+    font-size: 1.125em;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 40px;
+    display: none;
+}
+/* line 48, sass/layout/_header.scss */
+.main-navigation .menu {
+    list-style: none;
+    padding-right: 0;
+    margin: 0;
+}
+@media screen and (min-width: 641px) {
+    /* line 48, sass/layout/_header.scss */
+    .main-navigation .menu {
+        display: block !important;
+    }
+}
+@media screen and (max-width: 640px) {
+    /* line 48, sass/layout/_header.scss */
+    .main-navigation .menu {
+        display: none;
+    }
+}
+/* line 56, sass/layout/_header.scss */
+.main-navigation .menu .menu-item {
+    position: relative;
+    float: right;
+    text-align: end;
+}
+li ul{
+    display: none;
+}
+li:hover > ul{
+    display: block;
+    background-color: #313131;
+    border-radius: 1em;
+    padding: 0 0 0 0;
+    height: 100px;
+}
+li ul li{
+    height: 2em;
+    background-color: transparent;
+    color: black;
+    padding: 0px 0px 0px 0px;
+    transition: 0.7s ease;
+}
+li ul li:hover{
+    color:#a61034;
+    transition: 0.5s ease;
+}
+/* line 75, sass/layout/_header.scss */
+.main-navigation .menu .menu-item:last-child a:after {
+    display: none;
+}
+/* line 78, sass/layout/_header.scss */
+.main-navigation .menu .menu-item:hover:after, .main-navigation .menu .menu-item.current-menu-item:after {
+    opacity: 1;
+}
+/* line 80, sass/layout/_header.scss */
+.main-navigation .menu .menu-item:hover a, .main-navigation .menu .menu-item.current-menu-item a {
+    color: #a61034;
+}
+.main-navigation .menu a {
+    display: block;
+    position: relative;
+    padding: 10px 20px;
+    color: #afafaf;
+    font-size: 17px;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-transition: .3s ease;
+    transition: 1s ease;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: #a61034;
+}
+
+.persian-artists {
+    margin: 0px 100px 0px 0px ;
+    color: #a61034;
+    font-size: xx-large;
+}
+
+.site-footer 
+    {background: #1a1a1a;
+    padding: 15px 0;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    text-align: center;}

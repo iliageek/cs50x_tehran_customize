@@ -1,0 +1,163 @@
+*{
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: 'Arial Rounded MT Bold';
+    src: url('ARLRDBD.woff2') format('woff2'),
+         url('ARLRDBD.ttf') format('ttf'),
+         url('ARLRDBD.woff') format('woff');
+  }
+  
+  html, body{
+    background-color: #000000;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(to right, #000000 0%,100%);
+  }
+  ::selection{
+    background: #000000;
+  
+  }
+  .container{
+    background: #000000cc;
+    max-width: 350px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 15px;
+    border: 3px;
+    border-color: #5f96bf;
+  }
+  .container form .title{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position:relative;
+    color: #5f96bf;
+    text-align: center;
+  }
+  .container form .title:before{
+    position: absolute;
+    height: 4px;
+    width: 54px;
+    left: 235px;
+    bottom: -8px;
+    background: linear-gradient(to right, #747474 0%, #2c2c2c 100%);
+  }
+  .container form .input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
+    text-align: center;
+    background-color: #292929; 
+  }
+  .container form .input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    background-color: #292929;
+    color: #5f96bf;
+  }
+  .container form .underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #3b3b3b;
+    left: 0;
+    bottom: 0;
+  }
+  .container form .underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #000000 0%, #5f96bf 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.3s ease;
+  }
+  .container form .input-box input:focus ~ .underline::after,
+  .container form .input-box input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  .container form .button{
+    margin: 40px 0 20px 0;
+  }
+  .container .input-box input[type="submit"]{
+    background: linear-gradient(to right, #000000 0%, #8d9707 100%);
+    font-size: 17px;
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .container .input-box input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(to left, #8d9707 0%, #000000 100%);
+  }
+  .container .option{
+    font-size: 20px;
+    text-align: center;
+    color: #8d9707;
+  }
+
+  ::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: #a61034;
+}
+
+  .container .google a{
+    display: block;
+    height: 45px;
+    width: 100%;
+    font-size: 15px;
+    text-decoration: none;
+    padding-right: 25px;
+    line-height: 45px;
+    color: #000000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+
+  .container .google i{
+    padding-left: 15px;
+    font-size: 18px;
+  }
+  .container .google a{
+    background: linear-gradient(to right,  #8d9707 0%, #000000 100%);
+    margin: 20px 0 15px 0;
+  }
+
+  .container .google a:hover{
+    background: linear-gradient(to left,  #000000 0%, #8d9707 100%);
+    margin: 20px 0 15px 0;
+  }
+
+.signup {
+    color: #8d9707;
+    font-size: 1rem;
+    text-decoration: underline black;
+  }
